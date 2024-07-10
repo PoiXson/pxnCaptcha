@@ -1,0 +1,47 @@
+{
+	"name":        "pxn/pxncaptcha",
+	"description": "Captcha library",
+	"type":        "library",
+	"homepage":    "https://poixson.com",
+	"license":     "AGPL-3.0",
+	"keywords": [
+		"utilities"
+	],
+	"support": {
+		"source":  "https://git.poixson.com/summary/pxn!pxnCaptcha.git",
+		"issues":  "https://git.poixson.com/tickets/pxn!pxnCaptcha.git",
+		"discord": "https://discord.gg/jHgP2a3kDx"
+	},
+	"authors": [{
+		"name": "lorenzop",
+		"role": "Developer"
+	}],
+	"autoload": {
+		"psr-4": {
+			"pxn\\pxnCaptcha\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"pxn\\pxnCaptcha\\tests\\": "tests/"
+		}
+	},
+	"archive": {
+		"exclude": [
+			"tests/",
+			"examples/"
+		]
+	},
+	"require": {
+		"pxn/phputils": "*",
+		"pxn/composerlocaldev": "*"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "*"
+	},
+	"config": {
+		"allow-plugins": {
+			"pxn/composerlocaldev": true
+		}
+	}
+}
